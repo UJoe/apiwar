@@ -1,0 +1,19 @@
+#tie {
+  position: fixed;
+  transition: 3s;
+  height: 150px;
+  animation: fly 10s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes fly {
+  0% {left: 0; top: 0px;}
+  10% {left: 300px; top: 300px;}
+  20% {left: 500px; top: 150px;}
+  30% {left: 1300px; top: 500px;}
+  50% {left: 500px; top: 500px;}
+  55% {left: 100px; top: 100px;}
+  60% {left: 1500px; top: 0px;}
+  90% {left: 1000px; top: 50px;}
+  100% {left: 800px; top: 300px;}
+}

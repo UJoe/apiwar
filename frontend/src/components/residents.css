@@ -1,0 +1,18 @@
+.genderpic {
+  height: 20px;
+}
+
+/* button {
+  float: right;
+} */
+
+#fcknx {
+  display: relative;
+  float: right;
+  margin-bottom: -60px;
+  font-size: 2em;
+}
+
+#fcknx:hover {
+  cursor: crosshair;
+}

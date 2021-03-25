@@ -1,0 +1,227 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  color: yellow;
+  display: flex;
+  align-items: center;
+}
+
+.navitem {
+  color: yellow;
+  text-decoration: none;
+  border: 2px solid lightskyblue;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.loggeduser {
+  position: absolute;
+  right: 30px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(135, 206, 250, 1), rgba(0,0,0,0));
+  padding: 0 100px;
+}
+
+form {
+  position: relative;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-around;
+  align-items: center;
+  color: yellow;
+  border: double 6px lightskyblue;
+  background-color: rgba(0, 0, 0, 0.548);
+  width: 350px;
+  border-radius: 20px;
+  font-size: 1.5em;
+  animation: flash 2s infinite;
+}
+
+form button {
+  background-color: yellow;
+  color: darkblue;
+  margin: 20px auto;
+  transform: scale(1.5);
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+  transition: transform 0.5s;
+  box-shadow: 0 0 20px lightskyblue;
+  cursor: pointer;
+}
+
+form button:hover {
+  transform: scale(1.8)
+}
+form button:active {
+  transform: scale(1.3)
+}
+
+@keyframes flash {
+  0% {box-shadow: 0 0 10px rgba(50, 251, 14, 0);}
+  40% {box-shadow: 0 0 50px lightskyblue;}
+  60% {box-shadow: 0 0 50px lightskyblue;}
+  100% {box-shadow: 0 0 10px rgba(50, 251, 14, 0);}
+}
+
+span#log-result.animated, span#reg-result.animated {
+  opacity: 100%;
+  display: flex;
+  justify-content:center;
+  color: rgb(255, 0, 0);
+  width: 100%;
+  margin: 20px auto;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px yellow;
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0% {opacity: 0;}
+  20% {opacity: 100%;}
+  60% {opacity: 100%;}
+  100% {opacity: 0;}
+}
+
+h1 {
+  color:yellow;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(135, 206, 250, 1), rgba(0,0,0,0));
+  text-align: center;
+}
+
+/* Navigáló gombok */
+a.MuiButtonBase-root.MuiButton-root.MuiButton-contained.makeStyles-button-4.MuiButton-containedPrimary {
+  background-color: yellow;
+  color: black;
+}
+
+/* Disabled Navigáló gombok */
+a.MuiButtonBase-root.MuiButton-root.MuiButton-contained.makeStyles-button-4.MuiButton-containedPrimary.Mui-disabled.Mui-disabled {
+  background-color: rgba(255, 255, 0, 0.548);
+}
+
+/* Az egész táblázat teste */
+div.MuiPaper-root.MuiTableContainer-root.MuiPaper-elevation1.MuiPaper-rounded {
+  background-color: rgba(0, 0, 0, 0.603);
+  width: 90vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Táblázat fejlécében a feliratok */
+tr.MuiTableRow-root.MuiTableRow-head th{
+  color: yellow;
+  font-size: 18px;
+  text-shadow: 0 0 25px white;
+}
+
+/* Táblázat első oszlopában a feliratok */
+th.MuiTableCell-root.MuiTableCell-body {
+  color: yellow;
+}
+
+/* Táblázat body-jában a feliratok */
+td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-alignLeft {
+  color: yellow;
+}
+
+td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-alignCenter {
+  color: yellow;
+}
+
+/* residents gombok */
+#resiBtn {
+  background-color: rgba(0, 0, 0, 0);
+  color: yellow;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#resiBtn:hover {
+  background-color: yellow;
+  border: 3px solid rgba(255, 255, 0, 0);
+  border-radius: 10px;
+}
+
+td.MuiTableCell-root.MuiTableCell-body span:hover {
+  color: black;
+}
+
+/* vote gombok */
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.votespan {
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.votespan span.MuiButton-label{
+  color: rgb(0, 0, 0);
+}
+
+/* modal */
+div.makeStyles-paper-2{
+  background-color: black;
+  border: 1px solid yellow;
+  height: 600px;
+  overflow: auto;
+}
+
+/* Close button */
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.closepan {
+  float: right;
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgba(255, 255, 0, 0);
+  border-radius: 10px;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.closepan span.MuiButton-label{
+  color: rgb(0, 0, 0);
+}
+
+svg.MuiSvgIcon-root {
+  fill: yellow;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background: rgb(0, 0, 0);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: yellow; 
+  border-radius: 5px;
+}
+
+
+td.MuiTableCell-root.MuiTableCell-body span.voteCount{
+  color: yellow
+}
+
+td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-alignCenter span.noknown {
+  color: yellow
+}
+
+td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-alignCenter span.noknown:hover {
+  color: yellow
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  margin: 0 auto;
+}
